@@ -2,7 +2,29 @@
 ## source and windows binary are available at
 ## https://github.com/openrelia/stosim.gallery/tree/main/package
 
- co2capture<-function() {	
+
+co2system<-read.csv("https://raw.githubusercontent.com/openrelia/stosim.gallery/master/data/co2system.csv", TRUE)
+
+Capture_1<-co2system[1:2,1:11]			
+rownames(Capture_1)<-co2system[1:2,12]			
+Capture_2<-co2system[3:4,1:11]			
+rownames(Capture_2)<-co2system[3:4,12]			
+Capture_3<-co2system[6:7,1:11]			
+rownames(Capture_3)<-co2system[6:7,12]			
+Capture_4<-co2system[8:9,1:11]			
+rownames(Capture_4)<-co2system[8:9,12]			
+Supply_1<-co2system[5,1:11]			
+rownames(Supply_1)<-co2system[5,12]			
+Supply_2<-co2system[10,1:11]			
+rownames(Supply_2)<-co2system[10,12]			
+CO2DEL<-co2system[11:12,1:11]			
+rownames(CO2DEL)<-co2system[11:12,12]			
+Optim_1<-co2system[13,1:11]			
+rownames(Optim_1)<-co2system[13,12]			
+Optim_2<-co2system[14,1:11]			
+rownames(Optim_2)<-co2system[14,12]			
+
+ #co2capture<-function() {	
 	require(stosim)
 	##data(co2inputs) co2capture is now contained in co2inputs.RData
 pb <- tkProgressBar(title = "SimHistory Progress", min = 0,				
@@ -195,5 +217,5 @@ close(pb)
 	}
 	WtdPct<-lvls*PctOfTime
 	CO2ProdTable<-data.frame(lvls,PctOfTime,WtdPct)
-	CO2ProdTable
- }	
+	print(CO2ProdTable)
+ #}	
