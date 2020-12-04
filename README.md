@@ -25,8 +25,7 @@ the R Console or similar command available in RStudio.
  
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-source("https://raw.githubusercontent.com/openrelia/stosim.gallery/master/scripts/contour_challenge.r")
-
+source("https://raw.githubusercontent.com/openrelia/stosim.gallery/master/scripts/co2capture.r")
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
  
@@ -35,31 +34,31 @@ Output:
 
  
 
-[1] "Capacity-Hours:   16721690.4996845"
+[1] "Capacity-Hours: 16721690.4996845"
 
-[1] "Total Hours:   17518573.3943354"
+[1] "Total Hours: 17518573.3943354"
 
-[1] "Capacity Weighted Availability:   0.954512112561143"
+[1] "Capacity Weighted Availability: 0.954512112561143"
 
-lvls    PctOfTime       WtdPct
+lvls PctOfTime WtdPct
 
-1  0.00 1.304324e-02 0.000000e+00
+1 0.00 1.304324e-02 0.000000e+00
 
-2  0.15 8.689602e-06 1.303440e-06
+2 0.15 8.689602e-06 1.303440e-06
 
-3  0.25 8.110774e-04 2.027694e-04
+3 0.25 8.110774e-04 2.027694e-04
 
-4  0.30 2.963746e-04 8.891237e-05
+4 0.30 2.963746e-04 8.891237e-05
 
-5  0.40 2.365123e-05 9.460490e-06
+5 0.40 2.365123e-05 9.460490e-06
 
-6  0.50 2.860133e-02 1.430067e-02
+6 0.50 2.860133e-02 1.430067e-02
 
-7  0.55 6.777877e-04 3.727833e-04
+7 0.55 6.777877e-04 3.727833e-04
 
-8  0.60 2.228036e-04 1.336821e-04
+8 0.60 2.228036e-04 1.336821e-04
 
-9  0.65 6.443405e-04 4.188213e-04
+9 0.65 6.443405e-04 4.188213e-04
 
 10 0.75 4.862971e-02 3.647228e-02
 
